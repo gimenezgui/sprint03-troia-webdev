@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Solution from './components/Solution';
+import Gallery from './components/Gallery';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
       <main>
         <Hero />
         <Solution />
+        <Gallery />
       </main>
 
       <Footer />
