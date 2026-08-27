@@ -4,6 +4,7 @@ import Hero from './components/Hero';
 import Footer from './components/Footer';
 import Solution from './components/Solution';
 import Gallery from './components/Gallery';
+import CameraDemo from './components/CameraDemo';
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Hero />
         <Solution />
         <Gallery />
+        <CameraDemo />
       </main>
 
       <Footer />
