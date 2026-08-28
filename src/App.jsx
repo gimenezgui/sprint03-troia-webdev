@@ -7,6 +7,7 @@ import Gallery from './components/Gallery';
 import CameraDemo from './components/CameraDemo';
 import Audience from './components/Audience';
 import Team from './components/Team';
+import Contact from './components/Contact'
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
         <CameraDemo />
         <Audience />
         <Team />
+        <Contact />
       </main>
 
       <Footer />

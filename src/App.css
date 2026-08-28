@@ -1053,3 +1053,153 @@
     min-height: 310px;
   }
 }
+
+.contact {
+  color: #111411;
+  background: #f2f1ec;
+  border-top: 1px solid #d1d4cf;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: clamp(60px, 10vw, 160px);
+  padding-top: 30px;
+}
+
+.contact-copy {
+  padding: 34px 0;
+}
+
+.contact-copy > span {
+  color: #7b827c;
+  font-size: 10px;
+  letter-spacing: 0.16em;
+}
+
+.contact-copy h3 {
+  margin: 24px 0 18px;
+  font-size: clamp(42px, 6vw, 76px);
+  line-height: 1;
+}
+
+.contact-copy p {
+  max-width: 420px;
+  color: #656c66;
+  line-height: 1.7;
+}
+
+.contact-copy ul {
+  display: grid;
+  gap: 0;
+  margin: 48px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.contact-copy li {
+  padding: 15px 0;
+  border-top: 1px solid #cdd0cc;
+  font-size: 13px;
+}
+
+.contact-copy li::before {
+  content: '✓';
+  margin-right: 12px;
+  color: #709c00;
+  font-weight: 700;
+}
+
+.contact-form {
+  display: grid;
+  gap: 26px;
+  padding: 42px;
+  background: #ffffff;
+  border: 1px solid #d0d3cf;
+  box-shadow: 0 24px 70px rgba(19, 23, 20, 0.08);
+}
+
+.contact-form label {
+  display: grid;
+  gap: 10px;
+}
+
+.contact-form label > span {
+  color: #676e68;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 14px 0;
+  color: #111411;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #bbc0bb;
+  border-radius: 0;
+  outline: none;
+  font: inherit;
+  resize: vertical;
+  transition: border-color 0.25s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #6f9900;
+}
+
+.contact-form button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  color: #111411;
+  background: #cbff45;
+  border: 1px solid #cbff45;
+  font: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.contact-form button:hover {
+  background: #dcff80;
+  transform: translateY(-3px);
+}
+
+.form-note,
+.form-success {
+  margin: 0;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.form-note {
+  color: #747b75;
+}
+
+.form-success {
+  padding: 12px 14px;
+  color: #304800;
+  background: #e5ffab;
+  border-left: 3px solid #78a500;
+}
+
+@media (max-width: 900px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-form {
+    padding: 28px 20px;
+  }
+}
