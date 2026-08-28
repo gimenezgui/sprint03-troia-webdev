@@ -5,6 +5,7 @@ import Footer from './components/Footer';
 import Solution from './components/Solution';
 import Gallery from './components/Gallery';
 import CameraDemo from './components/CameraDemo';
+import Audience from './components/Audience';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Solution />
         <Gallery />
         <CameraDemo />
+        <Audience />
       </main>
 
       <Footer />
