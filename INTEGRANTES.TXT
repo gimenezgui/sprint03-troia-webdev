@@ -25,4 +25,9 @@ RM: 568777
 Responsabilidade: Ideias
 
 REPOSITÓRIO
+
 https://github.com/gimenezgui/sprint03-troia-webdev
+
+PUBLICAÇÃO NA VERCEL
+
+https://sprint03-troia-webdev.vercel.app/
