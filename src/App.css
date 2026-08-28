@@ -1628,3 +1628,130 @@ section {
     border-radius: 0;
   }
 }
+
+.hero-visual {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  background: #111512;
+}
+
+.hero-visual-image {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: cover;
+  object-position: center 35%;
+  transition:
+    transform 1.1s cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 0.5s ease;
+}
+
+.hero-visual:hover .hero-visual-image {
+  transform: scale(1.035);
+  filter: contrast(1.04);
+}
+
+.hero-visual-shade {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(6, 9, 7, 0.08) 30%,
+      rgba(6, 9, 7, 0.88) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(6, 9, 7, 0.18),
+      transparent 55%
+    );
+}
+
+.hero-focus-frame {
+  position: absolute;
+  z-index: 2;
+  inset: 44px;
+  pointer-events: none;
+}
+
+.hero-focus-corner {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  border-color: rgba(255, 255, 255, 0.88);
+}
+
+.hero-focus-top-left {
+  top: 0;
+  left: 0;
+  border-top: 2px solid;
+  border-left: 2px solid;
+}
+
+.hero-focus-top-right {
+  top: 0;
+  right: 0;
+  border-top: 2px solid;
+  border-right: 2px solid;
+}
+
+.hero-focus-bottom-left {
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid;
+  border-left: 2px solid;
+}
+
+.hero-focus-bottom-right {
+  right: 0;
+  bottom: 0;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+}
+
+.hero-visual-copy {
+  position: absolute;
+  z-index: 3;
+  right: 80px;
+  bottom: 76px;
+  left: 80px;
+  display: grid;
+  gap: 7px;
+}
+
+.hero-visual-copy > span {
+  color: #cbff45;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.17em;
+}
+
+.hero-visual-copy > strong {
+  color: #ffffff;
+  font-size: clamp(30px, 3vw, 46px);
+  line-height: 1;
+}
+
+.hero-visual-copy > small {
+  color: #b4bcb5;
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .hero-visual {
+    min-height: 520px;
+  }
+
+  .hero-focus-frame {
+    inset: 24px;
+  }
+
+  .hero-visual-copy {
+    right: 50px;
+    bottom: 55px;
+    left: 50px;
+  }
+}
